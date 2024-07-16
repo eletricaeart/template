@@ -1,0 +1,50 @@
+
+
+npm i @react-navigation/elements
+npm i @react-navigation/stack
+npm i @react-navigation/native
+
+npm i react-native-paper
+
+
+
+
+
+header
+== == == == == 
+<Header title="Céo" 
+         headerTitleAlign="center"
+         headerLeft={ () => (
+            <Text style={{ fontSize: 40, }}>::</Text>
+         ) }
+         headerStyle={{ height: 84, }}
+         headerBackground={ () => ( <>
+            <View style={ s.appbar }>
+               <View style={ s.l }></View>
+               <View style={ s.c }>
+                  <Image style={ s.i }
+                     source={ require( "../../assets/images/icon.png" ) }
+                  />
+               </View>
+               <View style={ s.r }></View>
+            </View>
+         </> ) }
+      />
+      
+      <Tabs
+         screenOptions={{
+         tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
+         headerShown: false,
+         header: (  ) => ( <>
+               <View style={ s.appbar }>
+                  <View style={ s.l }></View>
+                  <View style={ s.c }>
+                     <Image style={ s.i }
+                        source={ require( "../../assets/images/icon.png" ) }
+                     />
+                  </View>
+                  <View style={ s.r }></View>
+               </View>
+         </> ),
+
+         }}>
